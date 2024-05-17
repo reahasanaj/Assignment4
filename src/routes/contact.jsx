@@ -10,7 +10,8 @@ export async function loader({ params }) {
       });
     }
     return { contact };
-  }
+}
+
 export async function action({ request, params }) {
     let formData = await request.formData();
     return updateContact(params.contactId, {
